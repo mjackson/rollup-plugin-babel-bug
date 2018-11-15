@@ -3,7 +3,7 @@ This repo is the reproduction for [a bug in `rollup-plugin-babel`](https://githu
 To reproduce:
 
     $ npm install
-    $ rollup -c packages/react-router/rollup.config.js
+    $ ./node_modules/.bin/rollup -c packages/react-router/rollup.config.js
 
 This will give you an error, saying it can't find the "classProperties" transform in your babel config.
 
